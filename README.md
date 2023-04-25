@@ -16,3 +16,9 @@ The following techniques have been used:
 
 ## To excute the script
 python < scriptname.py >
+
+## To setup the environment 
+conda create -n evironment_name 
+
+## To export the env file
+conda env export > env.yml
