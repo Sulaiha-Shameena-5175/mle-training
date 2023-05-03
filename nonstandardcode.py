@@ -1,3 +1,12 @@
+"""
+The nonstandardcode contains the entire process.
+The data is downloaded and split into test and train dataset.
+Trained under different models.
+The best parameters were identified through RandomizedSearchCV
+"""
+
+
+import logging
 import os
 import tarfile
 
@@ -19,29 +28,48 @@ from sklearn.model_selection import (
 )
 from sklearn.tree import DecisionTreeRegressor
 
+logging.basicConfig(
+    filename="logs/.gitkeep/logfile.log",
+    filemode="w",
+    format="%(name)s-%(levelname)s-%(message)s",
+    level=logging.DEBUG,
+)
+
+logging.debug("--- The script start here ---")
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
 HOUSING_PATH = os.path.join("datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 
 def fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):
+    logging.debug("--- fetch_housing_data starts here ---")
     os.makedirs(housing_path, exist_ok=True)
     tgz_path = os.path.join(housing_path, "housing.tgz")
     urllib.request.urlretrieve(housing_url, tgz_path)
     housing_tgz = tarfile.open(tgz_path)
     housing_tgz.extractall(path=housing_path)
     housing_tgz.close()
+    logging.debug("--- fetch_housing_data ends ---")
 
 
 def load_housing_data(housing_path=HOUSING_PATH):
+    # fetch_housing_data()
     csv_path = os.path.join(housing_path, "housing.csv")
     return pd.read_csv(csv_path)
 
 
-housing = load_housing_data
+housing = load_housing_data()
+print("housing", housing.head())
 
+print(set(housing["ocean_proximity"]))
+housing["ocean_proximity"].replace(
+    {"INLAND": 0, "<1H OCEAN": 1, "NEAR OCEAN": 2, "NEAR BAY": 3, "ISLAND": 4},
+    inplace=True,
+)
+print(set(housing["ocean_proximity"]))
 
 train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
+logging.debug("test train split done")
 
 housing["income_cat"] = pd.cut(
     housing["median_income"],
@@ -122,7 +150,7 @@ housing_prepared = housing_tr.join(
     pd.get_dummies(housing_cat, drop_first=True)
 )
 
-
+logging.debug("preforming Linear Regression")
 lin_reg = LinearRegression()
 lin_reg.fit(housing_prepared, housing_labels)
 
@@ -136,7 +164,7 @@ lin_rmse
 lin_mae = mean_absolute_error(housing_labels, housing_predictions)
 lin_mae
 
-
+logging.debug("preforming Decision Tree Regressor")
 tree_reg = DecisionTreeRegressor(random_state=42)
 tree_reg.fit(housing_prepared, housing_labels)
 
@@ -145,6 +173,7 @@ tree_mse = mean_squared_error(housing_labels, housing_predictions)
 tree_rmse = np.sqrt(tree_mse)
 tree_rmse
 
+logging.debug("RandomizedSearchCV")
 
 param_distribs = {
     "n_estimators": randint(low=1, high=200),
@@ -222,3 +251,4 @@ X_test_prepared = X_test_prepared.join(
 final_predictions = final_model.predict(X_test_prepared)
 final_mse = mean_squared_error(y_test, final_predictions)
 final_rmse = np.sqrt(final_mse)
+print(final_predictions, final_mse, final_rmse)
