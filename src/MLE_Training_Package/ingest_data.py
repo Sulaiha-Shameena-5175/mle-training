@@ -35,6 +35,16 @@ HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 
 def fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):
+    """
+    It downloads the data as zip file and extracts it
+
+    Parameters:
+    -----------
+    housing_url : string
+        The url to download the data
+    housing_path : string
+        The path to store the data
+    """
     logging.debug("--- fetch_housing_data starts here ---")
     os.makedirs(housing_path, exist_ok=True)
     tgz_path = os.path.join(housing_path, "housing.tgz")
@@ -47,11 +57,41 @@ def fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):
 
 def load_housing_data(dataset_file_name, housing_path=HOUSING_PATH):
     # fetch_housing_data()
+    """
+    It loads the data and returns it as a dataframe
+
+    Parameters:
+    -----------
+    dataset_file_name : string
+        Name of the dataset
+    housing_path : string
+        The path to retrieve the data
+
+    Return:
+    -------
+    dataframe : panda dataframe
+    returns the dataframe of the data
+
+    """
     csv_path = os.path.join(housing_path, dataset_file_name)
     return pd.read_csv(csv_path)
 
 
 def get_housing_data(dataset_file_name):
+    """
+    It loads the data and returns it as a dataframe
+
+    Parameters:
+    -----------
+    dataset_file_name : string
+        Name of the dataset
+
+    Return:
+    -------
+    dataframe : panda dataframe
+    returns the dataframe of the data
+
+    """
     housing = load_housing_data(dataset_file_name)
     housing["ocean_proximity"].replace(
         {

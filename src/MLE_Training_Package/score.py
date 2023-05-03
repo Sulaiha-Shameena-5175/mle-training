@@ -24,6 +24,24 @@ from sklearn.tree import DecisionTreeRegressor
 def calc_score(
     housing_prepared, housing_labels, strat_train_set, strat_test_set, imputer
 ):
+    """
+    It finds the best parameters using RandomizedSearchCV
+
+    Parameters:
+    -----------
+    housing_prepared: dataframe
+    housing_labels: dataframe
+    strat_train_set: dataframe
+    strat_test_set: dataframe
+    imputer : singleImputer Object
+
+    Return:
+    -------
+    rmse : float
+    returns the Root Mean Square Error
+
+
+    """
     logging.debug("RandomizedSearchCV")
 
     param_distribs = {

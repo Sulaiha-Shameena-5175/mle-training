@@ -23,6 +23,24 @@ from sklearn.tree import DecisionTreeRegressor
 
 
 def train_train_split_data(housing):
+    """
+    It splits the data into test and train subsets
+
+    Parameters:
+    -----------
+    housing : dataframe
+        The data that need to be split
+
+    Return:
+    -------
+    returns
+        housing_prepared,
+        housing_labels,
+        strat_train_set,
+        strat_test_set,
+        imputer
+
+    """
     train_set, test_set = train_test_split(
         housing, test_size=0.2, random_state=42
     )
@@ -143,5 +161,15 @@ def income_cat_proportions(data):
 
 
 def create_pickle_file(model, fileName):
+    """
+    It pickles the model
+
+    Parameters:
+    -----------
+    model : ml model
+        The ml model that needs to be pickled
+    fileName: string
+        Name of the pickle file
+    """
     pickle.dump(model, open("../artifacts/.gitkeep/" + fileName, "wb"))
     logging.debug(f"pickle file created {fileName}")
