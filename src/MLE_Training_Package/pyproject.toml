@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MLE_Training_package"
+version = "0.0.1"
+description = "a package that do mles"
+dependencies = ['requests']
+
+[tool.setuptools]
+py-modules = []
