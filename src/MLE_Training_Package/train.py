@@ -7,8 +7,12 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from MLE_Training_Package.Custom_Transformer.customTransformer import (
+    CombinedAttributesAdder,
+)
 from scipy.stats import randint
 from six.moves import urllib
+from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LinearRegression
@@ -19,6 +23,8 @@ from sklearn.model_selection import (
     StratifiedShuffleSplit,
     train_test_split,
 )
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.tree import DecisionTreeRegressor
 
 
@@ -83,8 +89,6 @@ def train_train_split_data(housing):
     housing.plot(kind="scatter", x="longitude", y="latitude")
     housing.plot(kind="scatter", x="longitude", y="latitude", alpha=0.1)
 
-    corr_matrix = housing.corr()
-    corr_matrix["median_house_value"].sort_values(ascending=False)
     housing["rooms_per_household"] = (
         housing["total_rooms"] / housing["households"]
     )
@@ -94,6 +98,9 @@ def train_train_split_data(housing):
     housing["population_per_household"] = (
         housing["population"] / housing["households"]
     )
+
+    corr_matrix = housing.corr()
+    corr_matrix["median_house_value"].sort_values(ascending=False)
 
     housing = strat_train_set.drop(
         "median_house_value", axis=1
@@ -106,6 +113,19 @@ def train_train_split_data(housing):
 
     imputer.fit(housing_num)
     X = imputer.transform(housing_num)
+
+    housing_cat = housing[["ocean_proximity"]]
+    housing["rooms_per_household"] = (
+        housing["total_rooms"] / housing["households"]
+    )
+    housing["bedrooms_per_room"] = (
+        housing["total_bedrooms"] / housing["total_rooms"]
+    )
+    housing["population_per_household"] = (
+        housing["population"] / housing["households"]
+    )
+
+    # housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
 
     housing_tr = pd.DataFrame(
         X, columns=housing_num.columns, index=housing.index
@@ -120,10 +140,39 @@ def train_train_split_data(housing):
         housing_tr["population"] / housing_tr["households"]
     )
 
-    housing_cat = housing[["ocean_proximity"]]
-    housing_prepared = housing_tr.join(
-        pd.get_dummies(housing_cat, drop_first=True)
+    cat_encoder = OneHotEncoder()
+    housing_cat_1hot = cat_encoder.fit_transform(housing_cat)
+    print("housing_cat_1hot==>", housing_cat_1hot)
+    print(housing_cat_1hot.toarray())
+
+    # Custom Transformer
+
+    attr_adder = CombinedAttributesAdder(add_bedrooms_per_room=False)
+    housing_extra_attribs = attr_adder.transform(housing.values)
+    print("housing_extra_attribs ==> ", housing_extra_attribs)
+    num_pipeline = Pipeline(
+        [
+            ("imputer", SimpleImputer(strategy="median")),
+            ("attribs_adder", CombinedAttributesAdder()),
+            ("std_scaler", StandardScaler()),
+        ]
     )
+
+    housing_num_tr = num_pipeline.fit_transform(housing_num)
+    print("housing_num_tr==>", housing_num_tr)
+
+    num_attribs = list(housing_num)
+    cat_attribs = ["ocean_proximity"]
+
+    full_pipeline = ColumnTransformer(
+        [
+            ("num", num_pipeline, num_attribs),
+            ("cat", OneHotEncoder(), cat_attribs),
+        ]
+    )
+
+    housing_prepared = full_pipeline.fit_transform(housing)
+    print("housing_prepared==>", housing_prepared, len(housing_prepared[0]))
 
     logging.debug("preforming Linear Regression")
     lin_reg = LinearRegression()
@@ -133,10 +182,10 @@ def train_train_split_data(housing):
     housing_predictions = lin_reg.predict(housing_prepared)
     lin_mse = mean_squared_error(housing_labels, housing_predictions)
     lin_rmse = np.sqrt(lin_mse)
-    lin_rmse
+    print("lin_rmse", lin_rmse)
 
     lin_mae = mean_absolute_error(housing_labels, housing_predictions)
-    lin_mae
+    print("lin_mae", lin_mae)
 
     logging.debug("preforming Decision Tree Regressor")
     tree_reg = DecisionTreeRegressor(random_state=42)
@@ -146,13 +195,15 @@ def train_train_split_data(housing):
     housing_predictions = tree_reg.predict(housing_prepared)
     tree_mse = mean_squared_error(housing_labels, housing_predictions)
     tree_rmse = np.sqrt(tree_mse)
-    tree_rmse
+    print("tree_rmse", tree_rmse)
     return (
         housing_prepared,
         housing_labels,
         strat_train_set,
         strat_test_set,
         imputer,
+        full_pipeline,
+        num_attribs,
     )
 
 

@@ -22,7 +22,13 @@ from sklearn.tree import DecisionTreeRegressor
 
 
 def calc_score(
-    housing_prepared, housing_labels, strat_train_set, strat_test_set, imputer
+    housing_prepared,
+    housing_labels,
+    strat_train_set,
+    strat_test_set,
+    imputer,
+    full_pipeline,
+    num_attribs,
 ):
     """
     It finds the best parameters using RandomizedSearchCV
@@ -91,7 +97,13 @@ def calc_score(
         print(np.sqrt(-mean_score), params)
 
     feature_importances = grid_search.best_estimator_.feature_importances_
-    sorted(zip(feature_importances, housing_prepared.columns), reverse=True)
+
+    extra_attribs = ["rooms_per_hhold", "pop_per_hhold", "bedrooms_per_room"]
+    cat_encoder = full_pipeline.named_transformers_["cat"]
+    cat_one_hot_attribs = list(cat_encoder.categories_[0])
+    attributes = num_attribs + extra_attribs + cat_one_hot_attribs
+    sorted(zip(feature_importances, attributes), reverse=True)
+    # sorted(zip(feature_importances, housing_prepared.columns), reverse=True)
 
     final_model = grid_search.best_estimator_
 
@@ -114,9 +126,8 @@ def calc_score(
     )
 
     X_test_cat = X_test[["ocean_proximity"]]
-    X_test_prepared = X_test_prepared.join(
-        pd.get_dummies(X_test_cat, drop_first=True)
-    )
+    print(X_test_cat)
+    X_test_prepared = full_pipeline.transform(X_test)
 
     final_predictions = final_model.predict(X_test_prepared)
     final_mse = mean_squared_error(y_test, final_predictions)

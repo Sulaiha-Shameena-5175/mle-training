@@ -39,9 +39,18 @@ logging.debug("split the dataset into test and train")
     strat_train_set,
     strat_test_set,
     imputer,
+    full_pipeline,
+    num_attribs,
 ) = train.train_train_split_data(housing)
 
 logging.debug("identify the best paramaters using RandomizedSearchCV")
 score_calculated = score.calc_score(
-    housing_prepared, housing_labels, strat_train_set, strat_test_set, imputer
+    housing_prepared,
+    housing_labels,
+    strat_train_set,
+    strat_test_set,
+    imputer,
+    full_pipeline,
+    num_attribs,
 )
+print("final_score", score_calculated)
