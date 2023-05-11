@@ -8,4 +8,4 @@ entry_points:
     parameters:
       n_estimators: {type: int, default: 3}
       max_features: {type: int, default: 3}
-    command: "python train.py"
+    command: "python train.py {n_estimators} {max_features}"
