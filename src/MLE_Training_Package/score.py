@@ -1,5 +1,6 @@
 import logging
 import os
+import pickle
 import tarfile
 
 import matplotlib as mpl
@@ -133,4 +134,21 @@ def calc_score(
     final_mse = mean_squared_error(y_test, final_predictions)
     final_rmse = np.sqrt(final_mse)
     print(final_predictions, final_mse, final_rmse)
+    create_pickle_file(X_test_prepared, "x_test.pkl")
+    create_pickle_file(y_test, "y_test.pkl")
     return final_rmse
+
+
+def create_pickle_file(model, fileName):
+    """
+    It pickles the model
+
+    Parameters:
+    -----------
+    model : ml model
+        The ml model that needs to be pickled
+    fileName: string
+        Name of the pickle file
+    """
+    pickle.dump(model, open("../artifacts/.gitkeep/" + fileName, "wb"))
+    logging.debug(f"pickle file created {fileName}")

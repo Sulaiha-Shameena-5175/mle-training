@@ -178,6 +178,8 @@ def train_train_split_data(housing):
     lin_reg = LinearRegression()
     lin_reg.fit(housing_prepared, housing_labels)
     create_pickle_file(lin_reg, "lin_reg.pkl")
+    create_pickle_file(housing_prepared, "housing_prepared.pkl")
+    create_pickle_file(housing_labels, "housing_labels.pkl")
 
     housing_predictions = lin_reg.predict(housing_prepared)
     lin_mse = mean_squared_error(housing_labels, housing_predictions)
