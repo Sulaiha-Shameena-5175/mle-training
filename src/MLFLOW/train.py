@@ -63,10 +63,18 @@ if __name__ == "__main__":
     # train_x, train_y, test_x, test_y = load_data(data_path)
     housing_prepared, housing_labels, x_test, y_test = get_data()
 
-    n_estimators = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
-    max_features = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
-
-    with mlflow.start_run():
+    n_estimators = float(sys.argv[1]) if len(sys.argv) > 1 else 3
+    max_features = float(sys.argv[2]) if len(sys.argv) > 2 else 3
+    n_estimators = 10
+    max_features = 3
+    experiment_id = mlflow.create_experiment("experiment_rf")
+    with mlflow.start_run(
+        run_name="PARENT_RUN",
+        experiment_id=experiment_id,
+        tags={"version": "v1", "priority": "P1"},
+        description="parent",
+    ) as parent_run:
+        mlflow.log_param("child", "yes")
         rf = RandomForestRegressor(
             n_estimators=n_estimators,
             max_features=max_features,
