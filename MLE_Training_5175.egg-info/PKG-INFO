@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MLE-Training-5175
+Version: 0.0.1
+Summary: ML project that predicts the house price
+Author: MLE
+Author-email: MLE <sulaiha.shameena@tigeranalytics.com>
+Keywords: python,mle
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE

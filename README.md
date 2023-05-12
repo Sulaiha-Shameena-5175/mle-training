@@ -22,3 +22,14 @@ conda create -n evironment_name
 
 ## To export the env file
 conda env export > env.yml
+
+## To run the project
+cd src
+python index.py dateset_name
+eg. python index.py "housing.csv"
+
+## To run the test scripts
+type the command 'pytest'
+
+## To check log files
+check the folder 'logs'
