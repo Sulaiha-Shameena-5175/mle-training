@@ -131,6 +131,8 @@ def calc_score(
     X_test_prepared = full_pipeline.transform(X_test)
 
     final_predictions = final_model.predict(X_test_prepared)
+    print("======X_test_prepared=====")
+    print(X_test_prepared, len(X_test_prepared), X_test_prepared[0])
     final_mse = mean_squared_error(y_test, final_predictions)
     final_rmse = np.sqrt(final_mse)
     print(final_predictions, final_mse, final_rmse)

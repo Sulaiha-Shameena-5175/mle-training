@@ -44,13 +44,13 @@ def load_data_from_pickle(filepath):
 
 def get_data():
     housing_prepared = load_data_from_pickle(
-        "artifacts/.gitkeep/housing_prepared.pkl"
+        "../../artifacts/.gitkeep/housing_prepared.pkl"
     )
     housing_labels = load_data_from_pickle(
-        "artifacts/.gitkeep/housing_labels.pkl"
+        "../../artifacts/.gitkeep/housing_labels.pkl"
     )
-    x_test = load_data_from_pickle("artifacts/.gitkeep/x_test.pkl")
-    y_test = load_data_from_pickle("artifacts/.gitkeep/y_test.pkl")
+    x_test = load_data_from_pickle("../../artifacts/.gitkeep/x_test.pkl")
+    y_test = load_data_from_pickle("../../artifacts/.gitkeep/y_test.pkl")
     return housing_prepared, housing_labels, x_test, y_test
 
 
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     max_features = float(sys.argv[2]) if len(sys.argv) > 2 else 3
     n_estimators = 10
     max_features = 3
-    experiment_id = mlflow.create_experiment("experiment_rf")
+    experiment_id = mlflow.create_experiment("experiment_rf1")
     with mlflow.start_run(
         run_name="PARENT_RUN",
         experiment_id=experiment_id,
@@ -81,7 +81,7 @@ if __name__ == "__main__":
             random_state=42,
         )
         rf.fit(housing_prepared, housing_labels)
-
+        pickle.dump(rf, open("../../artifacts/.gitkeep/random.pkl", "wb"))
         predicted_qualities = rf.predict(x_test)
 
         (rmse, mae, r2) = eval_metrics(y_test, predicted_qualities)
