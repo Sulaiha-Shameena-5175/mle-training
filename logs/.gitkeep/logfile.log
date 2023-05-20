@@ -416,7 +416,11 @@ PIL.PngImagePlugin-DEBUG-STREAM b'pHYs' 57 9
 PIL.PngImagePlugin-DEBUG-STREAM b'IDAT' 78 364
 root-DEBUG-preforming Linear Regression
 root-DEBUG-pickle file created lin_reg.pkl
+root-DEBUG-pickle file created housing_prepared.pkl
+root-DEBUG-pickle file created housing_labels.pkl
 root-DEBUG-preforming Decision Tree Regressor
 root-DEBUG-pickle file created tree_reg.pkl
 root-DEBUG-identify the best paramaters using RandomizedSearchCV
 root-DEBUG-RandomizedSearchCV
+root-DEBUG-pickle file created x_test.pkl
+root-DEBUG-pickle file created y_test.pkl

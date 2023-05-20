@@ -1,0 +1,11 @@
+name: conda_tutorial
+
+conda_env:
+   conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      n_estimators: {type: int, default: 3}
+      max_features: {type: int, default: 3}
+    command: "python src/MLFLOW/train.py {n_estimators} {max_features}"

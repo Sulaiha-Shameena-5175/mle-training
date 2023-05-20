@@ -14,3 +14,11 @@ exclude = '''
     | dist
 )/
 '''
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "MLE_Training_5175"
+version = "0.0.1"
+description = "ML project that predicts the house price"
+authors = [{name = "MLE", email = "sulaiha.shameena@tigeranalytics.com"}]
