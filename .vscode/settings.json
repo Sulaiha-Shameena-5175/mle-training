@@ -5,11 +5,14 @@
         "source.organizeImports": true
     },
     //"python.pythonpath": "",
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "python.formatting.blackArgs": [
         "--line-length=119"
     ],
     "python.sortImports.args": [
         "--profile=black"
-    ]
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
 }

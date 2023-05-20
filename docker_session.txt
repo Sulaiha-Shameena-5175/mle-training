@@ -1,0 +1,414 @@
+Script started on 2023-05-19 11:10:46+05:30 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="79" LINES="29"]
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  apt-get remove docker docker-engine docker.io container [Kd runc
+[?2004l[sudo] password for sulaiha-shameena:
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+E: Unable to locate package docker-engine
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  apt-get update
+[?2004l0% [Working]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com (1                                                                              Hit:1 http://packages.microsoft.com/repos/code stable InRelease
+0% [Connecting to in.archive.ubuntu.com (91.189.91.38)] [Waiting for headers]                                                                               Hit:2 https://packages.microsoft.com/repos/vscode stable InRelease
+0% [Connecting to in.archive.ubuntu.com (91.189.91.38)] [Waiting for headers] 0% [Connecting to in.archive.ubuntu.com (91.189.91.38)] [Waiting for headers] 0% [Connecting to in.archive.ubuntu.com (185.125.190.39)] [Waiting for headers                                                                              Hit:3 http://security.ubuntu.com/ubuntu jammy-security InRelease
+0% [Waiting for headers] [Connected to ppa.launchpadcontent.net (185.125.190.50% [Waiting for headers] [Connected to ppa.launchpadcontent.net (185.125.190.5                                                                              Hit:4 http://in.archive.ubuntu.com/ubuntu jammy InRelease
+0% [Waiting for headers] [Connected to ppa.launchpadcontent.net (185.125.190.50% [Waiting for headers] [Connected to ppa.launchpadcontent.net (185.125.190.5                                                                              Hit:5 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease
+                                                                              0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:6 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu jammy InRelease
+                                              0% [Waiting for headers]                        Hit:7 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease
+                        0% [Working]0% [Working]20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 42%Reading package lists... 42%Reading package lists... 59%Reading package lists... 59%Reading package lists... 75%Reading package lists... 75%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 78%Reading package lists... 78%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 81%Reading package lists... 81%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  apt-get install ca-certificatin[Kond[K[K[K[Kes curl gnupg
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+ca-certificates is already the newest version (20211016ubuntu0.22.04.1).
+ca-certificates set to manually installed.
+curl is already the newest version (7.81.0-1ubuntu1.10).
+gnupg is already the newest version (2.2.27-3ubuntu2.1).
+gnupg set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 23 not upgraded.
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  install -m 0755 -d /etc/apt/keyrings/[K
+[?2004l[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ curl  -s[KfsSL hr[Kttps://download.docker.com/linux/ubuntu/gpg | sus[Kdo gpg --dearmor  -o /e tc/apt/keyrings/docker.cpg[K[K[Kgpg
+[?2004l[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  chmod a+r /etc/apt/keyrings/docker.gpg
+[?2004l[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [7mecho[27m[7m [27m[7m\ [27m
+[7m  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.[27m[7mg[27m[7mpg] https://download.docker.com/linux/ubuntu \ [27m
+[7m  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \[27m[A[A[A[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ echo \
+  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+[?2004l[?2004h> [7m sudo tee /etc/apt/sources.list.d/docker.list > /dev/null[27m[C[C sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\[K
+[?2004l[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  apt-get upf[Kdate
+[?2004l0% [Working]            Get:1 https://download.docker.com/linux/ubuntu jammy InRelease [48.9 kB]
+0% [Connecting to in.archive.ubuntu.com (185.125.190.36)] [Connecting to secur                                                                              Hit:2 http://packages.microsoft.com/repos/code stable InRelease
+0% [Connecting to in.archive.ubuntu.com (185.125.190.36)] [Connecting to secur0% [Connecting to in.archive.ubuntu.com (185.125.190.36)] [Connecting to secur                                                                              Hit:3 https://packages.microsoft.com/repos/vscode stable InRelease
+                                                                              0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://in.archive.ubuntu.com/ubuntu jammy InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpadcon                                                                              Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [17.9 kB]
+0% [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpadcon0% [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpadcon0% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers] [Connect0% [Waiting for headers] [Waiting for headers] [Connecting to ppa.launchpadcon                                                                              Hit:6 http://security.ubuntu.com/ubuntu jammy-security InRelease
+                                                                              0% [Waiting for headers] [Connecting to ppa.launchpadcontent.net]                                                                 Hit:7 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease
+                                                                 0% [Connecting to ppa.launchpadcontent.net]0% [Waiting for headers] [Connecting to ppa.launchpadcontent.net]0% [Waiting for headers] [Connecting to ppa.launchpadcontent.net]0% [Waiting for headers] [Connecting to ppa.launchpadcontent.net]0% [Waiting for headers] [Connecting to ppa.launchpadcontent.net]                                                                 Hit:8 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease
+                                                                 0% [Connecting to ppa.launchpadcontent.net]0% [Connecting to ppa.launchpadcontent.net (185.125.190.52)]                                                            0% [Waiting for headers]                        Hit:9 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu jammy InRelease
+                        0% [Working]100% [Working]              Fetched 66.8 kB in 2s (29.5 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 8%Reading package lists... 42%Reading package lists... 42%Reading package lists... 59%Reading package lists... 59%Reading package lists... 75%Reading package lists... 75%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 76%Reading package lists... 78%Reading package lists... 78%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 81%Reading package lists... 81%Reading package lists... 83%Reading package lists... 84%Reading package lists... 84%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 88%Reading package lists... 88%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... Done
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  apt-get install docker-ce docker-ce-cli c[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[7msudo[27m[7m [27m[7mapt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin doc[27m[7mk[27m[7mer-compose-plugin[27m[A[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  bridge-utils ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  docker-ce-rootless-extras libslirp0 slirp4netns
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
+The following packages will be REMOVED:
+  containerd docker.io runc
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin libslirp0 slirp4netns
+0 upgraded, 8 newly installed, 3 to remove and 22 not upgraded.
+Need to get 110 MB of archives.
+After this operation, 115 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]            Get:1 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.6.21-1 [28.3 MB]
+0% [1 containerd.io 15.9 kB/28.3 MB 0%] [Connecting to in.archive.ubuntu.com]                                                                             0% [1 containerd.io 589 kB/28.3 MB 2%] [Waiting for headers]1% [1 containerd.io 1,294 kB/28.3 MB 5%] [Waiting for headers]2% [1 containerd.io 2,129 kB/28.3 MB 8%] [Waiting for headers]                                                              Get:2 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61.5 kB]
+2% [1 containerd.io 2,211 kB/28.3 MB 8%] [2 libslirp0 8,479 B/61.5 kB 14%]                                                                          4% [1 containerd.io 2,228 kB/28.3 MB 8%]5% [1 containerd.io 3,145 kB/28.3 MB 11%] [Waiting for headers]                                                               Get:3 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28.2 kB]
+5% [1 containerd.io 3,309 kB/28.3 MB 12%] [3 slirp4netns 28.2 kB/28.2 kB 100%]                                                                              7% [1 containerd.io 3,309 kB/28.3 MB 12%]8% [1 containerd.io 3,866 kB/28.3 MB 14%]8% [1 containerd.io 4,734 kB/28.3 MB 17%]9% [1 containerd.io 6,012 kB/28.3 MB 21%]10% [1 containerd.io 6,864 kB/28.3 MB 24%]10% [1 containerd.io 7,307 kB/28.3 MB 26%]11% [1 containerd.io 8,454 kB/28.3 MB 30%]12% [1 containerd.io 9,584 kB/28.3 MB 34%]                  1,571 kB/s 1min 4s13% [1 containerd.io 10.8 MB/28.3 MB 38%]                   1,571 kB/s 1min 3s13% [1 containerd.io 11.6 MB/28.3 MB 41%]                   1,571 kB/s 1min 2s14% [1 containerd.io 12.3 MB/28.3 MB 44%]                   1,571 kB/s 1min 2s15% [1 containerd.io 13.2 MB/28.3 MB 47%]                   1,571 kB/s 1min 1s15% [1 containerd.io 13.9 MB/28.3 MB 49%]                   1,571 kB/s 1min 1s16% [1 containerd.io 14.7 MB/28.3 MB 52%]                       1,571 kB/s 60s16% [1 containerd.io 15.7 MB/28.3 MB 55%]                       1,571 kB/s 60s17% [1 containerd.io 17.0 MB/28.3 MB 60%]                       1,571 kB/s 59s18% [1 containerd.io 18.4 MB/28.3 MB 65%]                       1,571 kB/s 58s19% [1 containerd.io 19.4 MB/28.3 MB 68%]                       1,571 kB/s 57s19% [1 containerd.io 19.6 MB/28.3 MB 69%]                       1,571 kB/s 57s20% [1 containerd.io 19.9 MB/28.3 MB 70%]                       1,719 kB/s 52s20% [1 containerd.io 20.9 MB/28.3 MB 74%]                       1,719 kB/s 51s21% [1 containerd.io 21.7 MB/28.3 MB 77%]                       1,719 kB/s 51s21% [1 containerd.io 22.6 MB/28.3 MB 80%]                       1,719 kB/s 50s22% [1 containerd.io 23.3 MB/28.3 MB 82%]                       1,719 kB/s 50s23% [1 containerd.io 24.1 MB/28.3 MB 85%]                       1,719 kB/s 50s23% [1 containerd.io 24.8 MB/28.3 MB 88%]                       1,719 kB/s 49s24% [1 containerd.io 26.3 MB/28.3 MB 93%]                       1,719 kB/s 48s25% [1 containerd.io 27.4 MB/28.3 MB 97%]                       1,719 kB/s 48s25% [1 containerd.io 28.2 MB/28.3 MB 100%]                      1,719 kB/s 47s28% [Working]                                                   1,719 kB/s 47s                                                                              Get:4 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.10.4-1~ubuntu.22.04~jammy [25.9 MB]
+28% [4 docker-buildx-plugin 15.9 kB/25.9 MB 0%]                 1,719 kB/s 47s29% [4 docker-buildx-plugin 835 kB/25.9 MB 3%]                  1,719 kB/s 47s29% [4 docker-buildx-plugin 1,376 kB/25.9 MB 5%]                1,580 kB/s 50s30% [4 docker-buildx-plugin 2,572 kB/25.9 MB 10%]               1,580 kB/s 50s30% [4 docker-buildx-plugin 3,309 kB/25.9 MB 13%]               1,580 kB/s 49s31% [4 docker-buildx-plugin 4,259 kB/25.9 MB 16%]               1,580 kB/s 49s32% [4 docker-buildx-plugin 5,439 kB/25.9 MB 21%]               1,580 kB/s 48s33% [4 docker-buildx-plugin 6,537 kB/25.9 MB 25%]               1,580 kB/s 47s34% [4 docker-buildx-plugin 7,553 kB/25.9 MB 29%]               1,580 kB/s 47s34% [4 docker-buildx-plugin 8,650 kB/25.9 MB 33%]               1,580 kB/s 46s35% [4 docker-buildx-plugin 9,633 kB/25.9 MB 37%]               1,580 kB/s 45s36% [4 docker-buildx-plugin 10.6 MB/25.9 MB 41%]                1,580 kB/s 45s37% [4 docker-buildx-plugin 11.7 MB/25.9 MB 45%]                1,580 kB/s 44s37% [4 docker-buildx-plugin 12.8 MB/25.9 MB 50%]                1,580 kB/s 43s38% [4 docker-buildx-plugin 13.6 MB/25.9 MB 52%]                2,020 kB/s 33s39% [4 docker-buildx-plugin 14.4 MB/25.9 MB 55%]                2,020 kB/s 33s40% [4 docker-buildx-plugin 15.8 MB/25.9 MB 61%]                2,020 kB/s 32s40% [4 docker-buildx-plugin 16.9 MB/25.9 MB 65%]                2,020 kB/s 32s41% [4 docker-buildx-plugin 18.0 MB/25.9 MB 69%]                2,020 kB/s 31s42% [4 docker-buildx-plugin 18.9 MB/25.9 MB 73%]                2,020 kB/s 31s43% [4 docker-buildx-plugin 20.2 MB/25.9 MB 78%]                2,020 kB/s 30s43% [4 docker-buildx-plugin 21.2 MB/25.9 MB 82%]                2,020 kB/s 30s44% [4 docker-buildx-plugin 22.0 MB/25.9 MB 85%]                2,020 kB/s 29s45% [4 docker-buildx-plugin 23.1 MB/25.9 MB 89%]                2,020 kB/s 29s46% [4 docker-buildx-plugin 24.3 MB/25.9 MB 94%]                2,020 kB/s 28s46% [4 docker-buildx-plugin 25.3 MB/25.9 MB 98%]                2,020 kB/s 28s49% [Working]                                                   2,020 kB/s 27s                                                                              Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:24.0.0-1~ubuntu.22.04~jammy [13.3 MB]
+49% [5 docker-ce-cli 0 B/13.3 MB 0%]                            2,020 kB/s 27s50% [5 docker-ce-cli 950 kB/13.3 MB 7%]                         2,070 kB/s 26s51% [5 docker-ce-cli 1,753 kB/13.3 MB 13%]                      2,070 kB/s 26s51% [5 docker-ce-cli 2,473 kB/13.3 MB 19%]                      2,070 kB/s 25s52% [5 docker-ce-cli 3,096 kB/13.3 MB 23%]                      2,070 kB/s 25s52% [5 docker-ce-cli 3,702 kB/13.3 MB 28%]                      2,070 kB/s 25s53% [5 docker-ce-cli 4,620 kB/13.3 MB 35%]                      2,070 kB/s 24s53% [5 docker-ce-cli 5,505 kB/13.3 MB 41%]                      2,070 kB/s 24s54% [5 docker-ce-cli 6,471 kB/13.3 MB 49%]                      2,070 kB/s 23s55% [5 docker-ce-cli 7,274 kB/13.3 MB 55%]                      2,070 kB/s 23s55% [5 docker-ce-cli 8,126 kB/13.3 MB 61%]                      2,070 kB/s 23s56% [5 docker-ce-cli 9,043 kB/13.3 MB 68%]                      2,070 kB/s 22s57% [5 docker-ce-cli 10.1 MB/13.3 MB 76%]                       2,070 kB/s 22s58% [5 docker-ce-cli 11.5 MB/13.3 MB 87%]                       1,754 kB/s 25s59% [5 docker-ce-cli 13.0 MB/13.3 MB 98%]                       1,754 kB/s 24s61% [Working]                                                   1,754 kB/s 24s                                                                              Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:24.0.0-1~ubuntu.22.04~jammy [22.9 MB]
+61% [6 docker-ce 0 B/22.9 MB 0%]                                1,754 kB/s 24s63% [6 docker-ce 1,556 kB/22.9 MB 7%]                           1,754 kB/s 23s64% [6 docker-ce 3,063 kB/22.9 MB 13%]                          1,754 kB/s 22s64% [6 docker-ce 3,719 kB/22.9 MB 16%]                          1,754 kB/s 22s65% [6 docker-ce 5,226 kB/22.9 MB 23%]                          1,754 kB/s 21s66% [6 docker-ce 6,553 kB/22.9 MB 29%]                          1,754 kB/s 20s67% [6 docker-ce 8,126 kB/22.9 MB 36%]                          1,754 kB/s 19s68% [6 docker-ce 9,650 kB/22.9 MB 42%]                          1,754 kB/s 18s70% [6 docker-ce 11.2 MB/22.9 MB 49%]                           1,754 kB/s 18s70% [6 docker-ce 11.7 MB/22.9 MB 51%]                           1,754 kB/s 17s71% [6 docker-ce 12.9 MB/22.9 MB 57%]                           1,754 kB/s 17s72% [6 docker-ce 14.2 MB/22.9 MB 62%]                           2,565 kB/s 11s73% [6 docker-ce 15.3 MB/22.9 MB 67%]                           2,565 kB/s 10s73% [6 docker-ce 15.8 MB/22.9 MB 69%]                           2,565 kB/s 10s74% [6 docker-ce 16.6 MB/22.9 MB 72%]                           2,565 kB/s 10s74% [6 docker-ce 17.4 MB/22.9 MB 76%]                            2,565 kB/s 9s75% [6 docker-ce 18.1 MB/22.9 MB 79%]                            2,565 kB/s 9s75% [6 docker-ce 19.1 MB/22.9 MB 84%]                            2,565 kB/s 9s76% [6 docker-ce 20.2 MB/22.9 MB 88%]                            2,565 kB/s 8s77% [6 docker-ce 21.3 MB/22.9 MB 93%]                            2,565 kB/s 8s77% [6 docker-ce 22.1 MB/22.9 MB 96%]                            2,565 kB/s 8s81% [Working]                                                    2,565 kB/s 7s                                                                              Get:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:24.0.0-1~ubuntu.22.04~jammy [9,011 kB]
+81% [7 docker-ce-rootless-extras 0 B/9,011 kB 0%]                2,565 kB/s 7s82% [7 docker-ce-rootless-extras 1,622 kB/9,011 kB 18%]          2,565 kB/s 7s83% [7 docker-ce-rootless-extras 2,965 kB/9,011 kB 33%]          1,917 kB/s 8s84% [7 docker-ce-rootless-extras 4,063 kB/9,011 kB 45%]          1,917 kB/s 8s85% [7 docker-ce-rootless-extras 5,521 kB/9,011 kB 61%]          1,917 kB/s 7s86% [7 docker-ce-rootless-extras 6,930 kB/9,011 kB 77%]          1,917 kB/s 6s87% [7 docker-ce-rootless-extras 8,388 kB/9,011 kB 93%]          1,917 kB/s 5s87% [7 docker-ce-rootless-extras 8,962 kB/9,011 kB 99%]          1,917 kB/s 5s90% [Working]                                                    1,917 kB/s 5s                                                                              Get:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.17.3-1~ubuntu.22.04~jammy [10.9 MB]
+90% [8 docker-compose-plugin 0 B/10.9 MB 0%]                     1,917 kB/s 5s90% [8 docker-compose-plugin 999 kB/10.9 MB 9%]                  1,917 kB/s 5s91% [8 docker-compose-plugin 1,900 kB/10.9 MB 17%]               1,917 kB/s 4s91% [8 docker-compose-plugin 2,441 kB/10.9 MB 22%]               1,917 kB/s 4s92% [8 docker-compose-plugin 3,325 kB/10.9 MB 31%]               1,917 kB/s 3s93% [8 docker-compose-plugin 4,046 kB/10.9 MB 37%]               1,917 kB/s 3s93% [8 docker-compose-plugin 4,800 kB/10.9 MB 44%]               1,917 kB/s 3s94% [8 docker-compose-plugin 5,373 kB/10.9 MB 49%]               1,805 kB/s 3s94% [8 docker-compose-plugin 5,799 kB/10.9 MB 53%]               1,805 kB/s 2s94% [8 docker-compose-plugin 6,193 kB/10.9 MB 57%]               1,805 kB/s 2s94% [8 docker-compose-plugin 6,586 kB/10.9 MB 61%]               1,805 kB/s 2s95% [8 docker-compose-plugin 7,127 kB/10.9 MB 66%]               1,805 kB/s 2s95% [8 docker-compose-plugin 7,831 kB/10.9 MB 72%]               1,805 kB/s 1s96% [8 docker-compose-plugin 8,519 kB/10.9 MB 78%]               1,805 kB/s 1s96% [8 docker-compose-plugin 9,191 kB/10.9 MB 85%]               1,805 kB/s 0s97% [8 docker-compose-plugin 9,830 kB/10.9 MB 90%]               1,805 kB/s 0s100% [Working]                                                   1,805 kB/s 0s                                                                              Fetched 110 MB in 60s (1,841 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 224287 files and directories currently installed.)
+Removing docker.io (20.10.21-0ubuntu1~22.04.3) ...
+'/usr/share/docker.io/contrib/nuke-graph-directory.sh' -> '/var/lib/docker/nuke-graph-directory.sh'
+Warning: Stopping docker.service, but it can still be activated by:
+  docker.socket
+Removing containerd (1.6.12-0ubuntu1~22.04.1) ...
+Removing runc (1.1.4-0ubuntu1~22.04.2) ...
+Selecting previously unselected package containerd.io.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 224024 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_1.6.21-1_amd64.deb ...
+Unpacking containerd.io (1.6.21-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../1-docker-buildx-plugin_0.10.4-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-buildx-plugin (0.10.4-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../2-docker-ce-cli_5%3a24.0.0-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-cli (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../3-docker-ce_5%3a24.0.0-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../4-docker-ce-rootless-extras_5%3a24.0.0-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../5-docker-compose-plugin_2.17.3-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-compose-plugin (2.17.3-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../6-libslirp0_4.6.1-1build1_amd64.deb ...
+Unpacking libslirp0:amd64 (4.6.1-1build1) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../7-slirp4netns_1.0.1-2_amd64.deb ...
+Unpacking slirp4netns (1.0.1-2) ...
+Setting up docker-buildx-plugin (0.10.4-1~ubuntu.22.04~jammy) ...
+Setting up containerd.io (1.6.21-1) ...
+Setting up docker-compose-plugin (2.17.3-1~ubuntu.22.04~jammy) ...
+Setting up docker-ce-cli (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Setting up libslirp0:amd64 (4.6.1-1build1) ...
+Setting up docker-ce-rootless-extras (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Setting up slirp4netns (1.0.1-2) ...
+Setting up docker-ce (5:24.0.0-1~ubuntu.22.04~jammy) ...
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+invoke-rc.d: initscript docker, action "start" failed.
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (]8;;file://sulaihashameena-VirtualBox/lib/systemd/system/docker.service/lib/systemd/system/docker.service]8;;; enabled; vendor preset: enabled)
+     Active: activating (auto-restart) (Result: exit-code) since Fri 2023-05-19 11:22:09 IST; 8ms ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: ]8;;https://docs.docker.comhttps://docs.docker.com]8;;
+    Process: 6747 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock [0;1;31m(code=exited, status=1/FAILURE)[0m
+   Main PID: 6747 (code=exited, status=1/FAILURE)
+        CPU: 100ms
+dpkg: error processing package docker-ce (--configure):
+ installed docker-ce package post-installation script subprocess returned error exit status 1
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+Errors were encountered while processing:
+ docker-ce
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin[A[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo  docker run hello-world
+[?2004ldocker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+See 'docker run --help'.
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo docker run hello-world[Capt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin[A[Cdocker run hello-world[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+containerd.io is already the newest version (1.6.21-1).
+docker-buildx-plugin is already the newest version (0.10.4-1~ubuntu.22.04~jammy).
+docker-ce-cli is already the newest version (5:24.0.0-1~ubuntu.22.04~jammy).
+docker-ce is already the newest version (5:24.0.0-1~ubuntu.22.04~jammy).
+docker-compose-plugin is already the newest version (2.17.3-1~ubuntu.22.04~jammy).
+The following packages were automatically installed and are no longer required:
+  bridge-utils ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 22 not upgraded.
+1 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Setting up docker-ce (5:24.0.0-1~ubuntu.22.04~jammy) ...
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin[A[Cdocker run hello-world[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lUnable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+
+[1A[2K719385e32844: Pulling fs layer [1B[1A[2K719385e32844: Downloading  1.369kB/2.457kB[1B[1A[2K719385e32844: Download complete [1B[1A[2K719385e32844: Extracting  2.457kB/2.457kB[1B[1A[2K719385e32844: Extracting  2.457kB/2.457kB[1B[1A[2K719385e32844: Pull complete [1BDigest: sha256:fc6cf906cbfa013e80938cdf0bb199fbdbb86d6e3e013783e5a766f50f5dbce0
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ Docl [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck er version
+[?2004lCommand 'Docker' not found, did you mean:
+  command 'docker' from snap docker (20.10.24)
+  command 'docker' from deb docker.io (20.10.21-0ubuntu1~22.04.3)
+  command 'docker' from deb podman-docker (3.4.4+ds1-1ubuntu1)
+See 'snap info <snapname>' for additional versions.
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ Docker version[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cocker[1P version[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker version[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C
+
+[?2004lClient: Docker Engine - Community
+ Version:           24.0.0
+ API version:       1.43
+ Go version:        go1.20.4
+ Git commit:        98fdcd7
+ Built:             Mon May 15 18:49:22 2023
+ OS/Arch:           linux/amd64
+ Context:           default
+permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/version": dial unix /var/run/docker.sock: connect: permission denied
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirScript started on 2023-05-19 14:41:20+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="79" LINES="29"]
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ conda activate mle-dev[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C[Cde .[K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C[Cnda activate mle-dev[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C[Cde .[K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ virtualenv demo[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ code .[K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C[Cnda activate mle-dev[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [C[Cde .[K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ virtualenv demo[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ cd demo[K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ mkdir demo[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ cd Desktop/[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [Code .[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kdock er run hello-world
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo  systemctl d=e[K[K[Kenable debug-shell.service =[K[K [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kocker.service
+[?2004l[sudo] password for sulaiha-shameena:
+Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable docker
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ sudo systemctl enable docker.service[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcontainerd.service
+[?2004l[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker version
+[?2004lClient: Docker Engine - Community
+ Version:           24.0.0
+ API version:       1.43
+ Go version:        go1.20.4
+ Git commit:        98fdcd7
+ Built:             Mon May 15 18:49:22 2023
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          24.0.0
+  API version:      1.43 (minimum version 1.12)
+  Go version:       go1.20.4
+  Git commit:       1331b8c
+  Built:            Mon May 15 18:49:22 2023
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.21
+  GitCommit:        3dce8eb055cbb6872793272b4f20ed16117344f8
+ runc:
+  Version:          1.1.7
+  GitCommit:        v1.1.7-0-g860f061
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ exit [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004lexit
+
+Script done on 2023-05-19 14:57:36+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-05-19 15:28:32+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="51" LINES="14"]
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker image ls
+[?2004lREPOSITORY     TAG       IMAGE ID       CREATED         SIZE
+hello-docker   latest    1925982dd02c   2 minutes ago   1.02GB
+hello-world    latest    9c7a54a9a43c   2 weeks ago     13.3kB
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker run hello-docker
+[?2004lTraceback (most recent call last):
+  File "/app/src/index.py", line 12, in <module>
+    from MLE_Training_Package import ingest_data, score, train
+  File "/app/src/MLE_Training_Package/ingest_data.py", line 13, in <module>
+    import matplotlib as mpl
+ModuleNotFoundError: No module named 'matplotlib'
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ pip install matplotlib
+[?2004lRequirement already satisfied: matplotlib in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (3.7.1)
+Requirement already satisfied: cycler>=0.10 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: pillow>=6.2.0 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (9.5.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (3.0.9)
+Requirement already satisfied: packaging>=20.0 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (23.1)
+Requirement already satisfied: python-dateutil>=2.7 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: contourpy>=1.0.1 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (1.0.7)
+Requirement already satisfied: numpy>=1.20 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (1.24.3)
+Requirement already satisfied: fonttools>=4.22.0 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (4.39.3)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from matplotlib) (1.4.4)
+Requirement already satisfied: six>=1.5 in /home/sulaiha-shameena/miniconda3/lib/python3.10/site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ pip install matplotlibdocker run hello-docker
+[?2004lTraceback (most recent call last):
+  File "/app/src/index.py", line 12, in <module>
+    from MLE_Training_Package import ingest_data, score, train
+  File "/app/src/MLE_Training_Package/ingest_data.py", line 13, in <module>
+    import matplotlib as mpl
+ModuleNotFoundError: No module named 'matplotlib'
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker run hello-docker[1Ppip install matplotlibdocker run hello-docker[8Pimage lsexit[Kdocker version sudo systemctl enable containerd.service[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker[4P.service[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pdocker run hello-world
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo systemctl enable docker.service[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontainerd.service[A[C[C[C[C[C[C[C[C[C[C[C[12Pdocker version
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker image ls[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdok[Kcker build -t hello-docke r .
+[?2004l[1A[1B[0G[?25l[+] Building 0.0s (0/2)
+ => [internal] load build definition from Do  0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.2s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.7s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  0.8s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.2s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.4s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.5s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.7s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 1.8s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.7s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.0s (2/3)
+[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m => [internal] load metadata for docker.io/l  1.9s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.1s (4/7)
+ => [internal] load build context             0.1s
+ => => transferring context: 27B              0.1s
+[34m => [1/3] FROM docker.io/library/python:late  0.0s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.3s (5/7)
+[34m => => transferring context: 151.16kB         0.1s
+[0m[34m => CACHED [1/3] FROM docker.io/library/pyth  0.0s
+[0m => [2/3] COPY . /app                         0.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.4s (5/7)
+[34m => => transferring context: 151.16kB         0.1s
+[0m[34m => CACHED [1/3] FROM docker.io/library/pyth  0.0s
+[0m => [2/3] COPY . /app                         0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (5/7)
+[34m => => transferring context: 151.16kB         0.1s
+[0m[34m => CACHED [1/3] FROM docker.io/library/pyth  0.0s
+[0m => [2/3] COPY . /app                         0.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 2.7s (7/7)
+[34m => CACHED [1/3] FROM docker.io/library/pyth  0.0s
+[0m[34m => [2/3] COPY . /app                         0.5s
+[0m[34m => [3/3] WORKDIR /app                        0.1s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 3.3s (7/8)
+[34m => [3/3] WORKDIR /app                        0.1s
+[0m => exporting to image                        0.6s
+ => => exporting layers                       0.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Building 3.4s (7/8)
+ => exporting to image                        0.7s
+[34m => => writing image sha256:1b4d9bae1d4ebc71  0.0s
+[0m[34m => => naming to docker.io/library/hello-doc  0.0s
+[0m[?25h[1A[1A[1A[1A[0G[?25l[+] Building 3.5s (8/8) FINISHED
+[34m => [internal] load build definition from Do  0.0s
+[0m[34m => => transferring dockerfile: 116B          0.0s
+[0m[34m => [internal] load .dockerignore             0.0s
+[0m[34m => => transferring context: 2B               0.0s
+[0m[34m => [internal] load metadata for docker.io/l  1.9s
+[0m[34m => [internal] load build context             0.1s
+[0m[34m => => transferring context: 151.16kB         0.1s
+[0m[34m => CACHED [1/3] FROM docker.io/library/pyth  0.0s
+[0m[34m => [2/3] COPY . /app                         0.5s
+[0m[34m => [3/3] WORKDIR /app                        0.1s
+[0m[34m => exporting to image                        0.7s
+[0m[34m => => exporting layers                       0.7s
+[0m[34m => => writing image sha256:1b4d9bae1d4ebc71  0.0s
+[0m[34m => => naming to docker.io/library/hello-doc  0.0s
+[0m[?25h[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:
+[01;34m~/Desktop/mle-training[00m$ [K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ [K[A(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ docker build -t hello-docker .[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4Prun hello-docker
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lTraceback (most recent call last):
+  File "/app/src/index.py", line 12, in <module>
+    from MLE_Training_Package import ingest_data, score, train
+  File "/app/src/MLE_Training_Package/ingest_data.py", line Script started on 2023-05-20 08:04:36+05:30 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="51" LINES="10"]
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ gi[K[Kc[Kdocker pull sulaihashameena5175/mle:1.0.0
+[?2004l1.0.0: Pulling from sulaihashameena5175/mle
+Digest: sha256:282b674cce57887dd42da299ae3175be93b0102c0c331325f8f0061be3cbb1cf
+Status: Image is up to date for sulaihashameena5175/mle:1.0.0
+docker.io/sulaihashameena5175/mle:1.0.0
+[?2004h(base) ]0;sulaiha-shameena@sulaihashameena-VirtualBox: ~/Desktop/mle-training[01;32msulaiha-shameena@sulaihashameena-VirtualBox[00m:[01;34m~/Desktop/mle-training[00m$ exit
+[?2004lexit
+
+Script done on 2023-05-20 08:06:31+05:30 [COMMAND_EXIT_CODE="0"]

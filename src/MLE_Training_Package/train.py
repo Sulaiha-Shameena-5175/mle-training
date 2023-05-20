@@ -224,5 +224,5 @@ def create_pickle_file(model, fileName):
     fileName: string
         Name of the pickle file
     """
-    pickle.dump(model, open("../artifacts/.gitkeep/" + fileName, "wb"))
+    pickle.dump(model, open("app/artifacts/.gitkeep/" + fileName, "wb"))
     logging.debug(f"pickle file created {fileName}")
