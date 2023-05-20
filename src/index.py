@@ -8,6 +8,7 @@ The best parameters were identified through RandomizedSearchCV
 
 import argparse
 import logging
+import os
 
 from MLE_Training_Package import ingest_data, score, train
 
@@ -19,15 +20,15 @@ dataset_file_name = args.dataset
 
 for handler in logging.root.handlers[:]:
     logging.root.removeHandler(handler)
-
+"""
 logging.basicConfig(
-    filename="../logs/.gitkeep/logfile.log",
+    filename="../../logs/.gitkeep/logfile.log",
     filemode="w",
     format="%(name)s-%(levelname)s-%(message)s",
     level=logging.DEBUG,
     force=True,
 )
-
+"""
 logging.debug("Loading the dataset")
 # ingest_data.success()
 housing = ingest_data.get_housing_data(dataset_file_name)  # "housing.csv"
